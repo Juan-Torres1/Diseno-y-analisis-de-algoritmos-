@@ -1,1 +1,1 @@
-# Dise-o-y-an-lisis-de-algoritmos-
+# Diseno-y-analisis-de-algoritmos-
