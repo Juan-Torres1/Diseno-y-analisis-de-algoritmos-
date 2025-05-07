@@ -108,3 +108,61 @@ class Graph:
         f.write(";\n}")
         f.close()
         print(f"Grafo guardado en {filename}")
+
+        #Proyecto 2 (Algoritmos BFS, DFS iterativo y recursivo)
+        
+        """Realiza una búsqueda en anchura (BFS) desde un nodo inicial."""
+    def bfs(self, start_value):
+
+        if start_value not in self.nodes:
+            print(f"Node {start_value} does not exist.")
+            return []
+
+        visited = set()
+        queue = [self.nodes[start_value]]
+        bfs_order = []
+
+        while queue:
+            current_node = queue.pop(0)
+            if current_node.value not in visited:
+                visited.add(current_node.value)
+                bfs_order.append(current_node.value)
+                queue.extend(current_node.get_neighbors())
+
+        return bfs_order
+
+        """Realiza una búsqueda en profundidad (DFS) iterativa desde un nodo inicial."""
+    def dfs_iterative(self, start_value):
+        if start_value not in self.nodes:
+            print(f"Node {start_value} does not exist.")
+            return []
+
+        visited = set()
+        stack = [self.nodes[start_value]]
+        dfs_order = []
+
+        while stack:
+            current_node = stack.pop()
+            if current_node.value not in visited:
+                visited.add(current_node.value)
+                dfs_order.append(current_node.value)
+                stack.extend(current_node.get_neighbors())
+
+        return dfs_order
+
+        """Realiza una búsqueda en profundidad (DFS) recursiva desde un nodo inicial."""
+    def dfs_recursive(self, start_value, visited=None):
+        if visited is None:
+            visited = set()
+        if start_value not in self.nodes:
+            print(f"Node {start_value} does not exist.")
+            return []
+
+        visited.add(start_value)
+        dfs_order = [start_value]
+
+        for neighbor in self.nodes[start_value].get_neighbors():
+            if neighbor.value not in visited:
+                dfs_order.extend(self.dfs_recursive(neighbor.value, visited))
+
+        return dfs_order
