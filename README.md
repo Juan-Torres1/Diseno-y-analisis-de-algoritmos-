@@ -62,3 +62,20 @@ Implementación de los algoritmos de **Kruskal (directo e inverso)** y **Prim** 
 - Imágenes de los grafos generados y calculados.
 - Captura de pantalla mostrando el valor del **MST**.
 
+
+
+# Proyecto 5 - Disposición de Grafos
+
+Este proyecto presenta una visualización de **grafos** utilizando **Pygame**. Se emplea el método **Spring**, basado en el **algoritmo de resortes** de P. Eades (1984), para calcular la disposición del grafo de manera eficiente, con una complejidad de **O(m+n)**.
+
+La simulación permite observar cómo los nodos y las conexiones se organizan dinámicamente mediante fuerzas simuladas, proporcionando una representación clara y estructurada de la red.
+
+## **Entregables**
+- Código fuente
+- Capturas de pantalla y enlaces a videos con la ejecución del proyecto.
+  - Dos por cada modelo de generación:
+    - Uno con 100 nodos
+    - Otro con 500 nodos.
+
+
+
