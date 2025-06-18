@@ -74,6 +74,7 @@ La simulación permite observar cómo los nodos y las conexiones se organizan di
 - Código fuente
 - Capturas de pantalla y enlaces a videos con la ejecución del proyecto.
   Dos por cada modelo de generación. (Uno con 100 y otro con 500 nodos)
+Enlace: https://drive.google.com/drive/folders/12tuMjfuBmJlS1b4BZ_IvbIPs5YJFSMXi?usp=share_link
 
 
 
