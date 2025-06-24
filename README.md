@@ -76,5 +76,21 @@ La simulación permite observar cómo los nodos y las conexiones se organizan di
   Dos por cada modelo de generación. (Uno con 100 y otro con 500 nodos)
 Enlace: https://drive.google.com/drive/folders/12tuMjfuBmJlS1b4BZ_IvbIPs5YJFSMXi?usp=share_link
 
+# Proyecto 7 (Opcional) - Transformada Rápida de Fourier
 
+Este proyecto implementa la **Transformada Rápida de Fourier (FFT)** utilizando el algoritmo recursivo visto en clase. El objetivo es procesar archivos de audio, analizar sus frecuencias y aplicar filtros, todo en Python.
+
+## Características
+
+- Lenguaje: Python  
+- Lectura de archivo de audio
+- Cálculo de la Transformada Rápida de Fourier (FFT)
+- Gráfica de las frecuencias
+- Aplicación de filtro pasabajas
+- Transformada inversa
+- Escritura del resultado en un archivo de audio de salida
+
+
+## Entregables
+- Repositorio con **código fuente** y **recursos** necesarios para ejecutar el proyecto.
 
